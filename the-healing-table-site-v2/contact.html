@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | The Healing Table</title>
+<meta name="description" content="Get in touch with The Healing Table to ask about counseling, community meals, volunteering, or church partnerships.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.svg" alt="The Healing Table" class="logo-img">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Programs</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="contact.html" class="current">Contact</a></li>
+      <li><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have a question about counseling, volunteering, or partnering with us? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container split">
+    <div class="reveal">
+      <h2>Send a Message</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="reason">I'm reaching out about&hellip;</label>
+          <select id="reason" name="reason">
+            <option>Counseling Services</option>
+            <option>Volunteering</option>
+            <option>Church or Community Partnership</option>
+            <option>Donating / Giving</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <p style="margin-top:14px; color:var(--color-text-light); font-size:0.88rem;">This form is a placeholder for now &mdash; connect it to your email or form service (or a WordPress plugin like WPForms) once the site is live.</p>
+    </div>
+
+    <div class="reveal">
+      <h2>Reach Us Directly</h2>
+      <div class="contact-info-item">
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <strong>Phone</strong><br>
+          <span>(Add your ministry phone number)</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <strong>Location</strong><br>
+          <span>(Add your city, or "Serving [Region] by appointment")</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <strong>Community Dinners</strong><br>
+          <span>Ask us about our next monthly Healing Table dinner.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container reveal">
+    <h2>Pull up a chair. There is room for you.</h2>
+    <p>Whatever brings you here, we're glad you did.</p>
+    <a href="index.html" class="btn btn-outline">Back to Home</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.svg" alt="The Healing Table" class="footer-logo">
+        <p>A nonprofit faith-based mental health counseling, hospitality, and training ministry. Healing happens when we sit together &mdash; not alone.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Programs</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a></li>
+          <li><a href="get-involved.html#donate">Give Online</a></li>
+          <li><a href="contact.html">Partner With Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
