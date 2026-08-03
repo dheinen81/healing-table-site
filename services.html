@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Programs &amp; Services | The Healing Table</title>
 <meta name="description" content="Explore The Healing Table's programs: faith-based counseling, pastoral care, therapeutic cooking, community meals, a donation-only café, and youth training.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,9 +15,9 @@
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">
-      The Healing Table
-      <span class="tagline">Counseling · Hospitality · Training</span>
+      <img src="assets/logo.svg" alt="The Healing Table" class="logo-img">
     </a>
+    <span class="nav-tagline">Est. 2026<br>A Ministry of Presence</span>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -24,140 +25,183 @@
       <li><a href="services.html" class="current">Programs</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
       <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
       <li><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-hero page-hero-photo" style="background-image:url('assets/photos/teaching.jpg');">
   <div class="container">
     <h1>Our Programs</h1>
-    <p>Counseling, pastoral care, hospitality, and training &mdash; woven together into one ministry of healing.</p>
+    <p>Counseling, pastoral care, hospitality, and training &mdash; woven together into one ministry of healing. Tap a program below to see the details.</p>
   </div>
 </section>
 
-<section id="counseling">
-  <div class="container split">
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Counseling</span>
-      <h2>Faith-Based Counseling</h2>
-      <p>Licensed, Christ-centered counseling for individuals, couples, and families &mdash; because clinical excellence and compassionate care belong together.</p>
-      <ul class="check">
-        <li>Individual, couples, and family counseling</li>
-        <li>Group therapy for trauma recovery, grief, and anxiety</li>
-        <li>Sliding scale payment options and scholarships</li>
-      </ul>
+<section>
+  <div class="container">
+    <div class="gallery-grid reveal" style="margin-bottom:56px;">
+      <div class="photo-frame tall"><img src="assets/photos/mothers-day.jpg" alt="A mother holding her baby at a Sunday gathering" loading="lazy"></div>
+      <div class="photo-frame square"><img src="assets/photos/worship-team.jpg" alt="The worship team leading a gathering" loading="lazy"></div>
+      <div class="photo-frame square"><img src="assets/photos/worship-team-2.jpg" alt="The community gathered in worship" loading="lazy"></div>
+      <div class="photo-frame wide"><img src="assets/photos/cookout.jpg" alt="A community cookout" loading="lazy"></div>
     </div>
-    <div class="card">
-      <span class="icon">&#128172;</span>
-      <h3>Who It's For</h3>
-      <p>Anyone navigating emotional or spiritual struggles who needs affordable, faith-based support &mdash; regardless of their ability to pay.</p>
-    </div>
-  </div>
-</section>
+    <div class="explorer">
 
-<section class="section-alt" id="pastoral-care">
-  <div class="container split">
-    <div class="card">
-      <span class="icon">&#128591;</span>
-      <h3>Rooted in Prayer</h3>
-      <p>Spiritual direction, biblical encouragement, and devotional journaling walk alongside clinical care.</p>
-    </div>
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Pastoral Care</span>
-      <h2>Pastoral Counseling &amp; Prayer Ministry</h2>
-      <p>For those seeking spiritual encouragement alongside emotional healing.</p>
-      <ul class="check">
-        <li>Pastoral counseling and prayer ministry</li>
-        <li>Spiritual direction and biblical encouragement</li>
-        <li>Devotional journaling and scriptural healing groups</li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <details class="explorer-item reveal" open>
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">01</span>Christian Counseling
+            <div class="teaser">Licensed clinical counseling, integrated with a Christian faith perspective</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Licensed clinical counseling for individuals, couples, and families, with a Christian faith perspective woven through the work. This is clinical care &mdash; delivered by licensed mental health counselors, bound by the same confidentiality and clinical standards as any counseling practice &mdash; with scripture, prayer, and faith available as part of the process.</p>
+          <ul>
+            <li>Individual, couples, and family counseling</li>
+            <li>Group therapy for trauma recovery, grief, and anxiety</li>
+            <li>Faith-integrated, evidence-based clinical care</li>
+            <li>Sliding scale payment options and scholarships</li>
+          </ul>
+        </div>
+      </details>
 
-<section id="cooking">
-  <div class="container split">
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Culinary Ministry</span>
-      <h2>Therapeutic Cooking Workshops</h2>
-      <p>Cooking becomes a healing practice &mdash; a way to process, connect, and pass down stories between generations.</p>
-      <ul class="check">
-        <li>Trauma-informed culinary therapy</li>
-        <li>Nutrition and soul care classes</li>
-        <li>Intergenerational cooking and storytelling circles</li>
-      </ul>
-    </div>
-    <div class="card">
-      <span class="icon">&#127859;</span>
-      <h3>Healing Through Making</h3>
-      <p>Working with our hands, together, creates space for conversation and connection that talk therapy alone can't always reach.</p>
-    </div>
-  </div>
-</section>
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">02</span>Pastoral Care
+            <div class="teaser">Prayer, spiritual direction &amp; biblical encouragement &mdash; not clinical therapy</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Pastoral care is spiritual support, not clinical treatment. It's time with one of our pastors for prayer, spiritual direction, and biblical encouragement &mdash; walking alongside you in faith. It doesn't diagnose or treat a condition, and it isn't a substitute for licensed counseling, though the two often work well side by side.</p>
+          <ul>
+            <li>Pastoral counseling and prayer ministry</li>
+            <li>Spiritual direction and biblical encouragement</li>
+            <li>Devotional journaling and scriptural healing groups</li>
+            <li>Provided by pastors, not a replacement for clinical care</li>
+          </ul>
+        </div>
+      </details>
 
-<section class="section-alt" id="community-meals">
-  <div class="container split">
-    <div class="card">
-      <span class="icon">&#127860;</span>
-      <h3>Gather Around the Table</h3>
-      <p>No one leaves a Healing Table dinner without a full plate, a good conversation, and a reminder they're not alone.</p>
-    </div>
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Community</span>
-      <h2>Community Meals &amp; Events</h2>
-      <p>Monthly dinners and pop-up meals bring healing conversation to the neighborhoods that need it most.</p>
-      <ul class="check">
-        <li>Monthly &ldquo;Healing Table&rdquo; dinners with topical discussions</li>
-        <li>Pop-up meals in underserved communities</li>
-        <li>Holiday feasts with devotional messages</li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">03</span>Non-Faith-Based Counseling
+            <div class="teaser">The same licensed clinical care, without a religious lens</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Not everyone who needs support shares our faith, and that's okay &mdash; you're still welcome at this table. This is the same licensed clinical counseling as our Christian Counseling track, offered by the same counselors, just without scripture or prayer unless you ask for it. Professional mental health care, no faith requirement.</p>
+          <ul>
+            <li>Individual, couples, and family counseling</li>
+            <li>Group therapy for trauma recovery, grief, and anxiety</li>
+            <li>Delivered by licensed counselors, without a religious framework</li>
+            <li>Sliding scale payment options and scholarships</li>
+          </ul>
+        </div>
+      </details>
 
-<section id="cafe">
-  <div class="container split">
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Hospitality</span>
-      <h2>Donation-Only Restaurant &amp; Coffee Shop</h2>
-      <p>A &ldquo;pay what you can&rdquo; restaurant and caf&eacute; open to the public, staffed in part by our youth trainees.</p>
-      <ul class="check">
-        <li>Operated as a hospitality ministry, not a business</li>
-        <li>Open to the public and staffed in part by youth trainees</li>
-        <li>Profits reinvested into ministry operations and scholarships</li>
-      </ul>
-    </div>
-    <div class="card">
-      <span class="icon">&#9749;</span>
-      <h3>Coming in Phase 2</h3>
-      <p>Our donation-based caf&eacute; and counseling center opens as part of our facility expansion &mdash; a home base for the whole ministry.</p>
-    </div>
-  </div>
-</section>
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">04</span>Pastor to Pastor Counseling
+            <div class="teaser">Confidential support and counseling for pastors and ministry leaders</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Pastors carry weight that's hard to set down in front of their own congregation. This service offers a confidential space for pastors and ministry leaders in Baton Rouge and the surrounding areas to be cared for themselves &mdash; led by one of our pastoral counselors who understands the unique pressures of ministry leadership.</p>
+          <ul>
+            <li>One-on-one, confidential pastor-to-pastor counseling</li>
+            <li>Support for burnout, conflict, grief, and the weight of leadership</li>
+            <li>Serving pastors, ministry leaders, and their spouses in Baton Rouge and surrounding areas</li>
+          </ul>
+        </div>
+      </details>
 
-<section class="section-alt" id="youth-training">
-  <div class="container split">
-    <div class="card">
-      <span class="icon">&#127793;</span>
-      <h3>Skills for Life</h3>
-      <p>Mentorship from Christian leaders and licensed counselors, paired with real job training.</p>
-    </div>
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Training</span>
-      <h2>Youth &amp; Young Adult Training Program</h2>
-      <p>Practical culinary and hospitality training combined with discipleship and life skills &mdash; equipping the next generation for work and for life.</p>
-      <ul class="check">
-        <li>Culinary, hospitality, and customer service training</li>
-        <li>Life skills, financial literacy, and discipleship</li>
-        <li>Mentorship from Christian leaders and licensed counselors</li>
-      </ul>
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">05</span>Therapeutic Cooking Workshops
+            <div class="teaser">Trauma-informed culinary therapy and soul care classes</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Cooking becomes a healing practice &mdash; a way to process, connect, and pass down stories between generations.</p>
+          <ul>
+            <li>Trauma-informed culinary therapy</li>
+            <li>Nutrition and soul care classes</li>
+            <li>Intergenerational cooking and storytelling circles</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">06</span>Community Meals &amp; Events
+            <div class="teaser">Monthly dinners, pop-up meals &amp; holiday feasts</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Monthly dinners and pop-up meals bring healing conversation to the neighborhoods that need it most.</p>
+          <ul>
+            <li>Monthly &ldquo;Healing Table&rdquo; dinners with topical discussions</li>
+            <li>Pop-up meals in underserved communities</li>
+            <li>Holiday feasts with devotional messages</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">07</span>Donation-Only Restaurant &amp; Coffee Shop
+            <div class="teaser">A &ldquo;pay what you can&rdquo; caf&eacute; staffed in part by youth trainees</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>A &ldquo;pay what you can&rdquo; restaurant and caf&eacute; open to the public, staffed in part by our youth trainees.</p>
+          <ul>
+            <li>Operated as a hospitality ministry, not a business</li>
+            <li>Open to the public and staffed in part by youth trainees</li>
+            <li>Profits reinvested into ministry operations and scholarships</li>
+          </ul>
+          <p style="margin-top:14px;color:var(--color-text-light);font-size:0.9rem;">Coming in Phase 2, as part of our facility expansion.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">
+            <span class="item-num">08</span>Youth &amp; Young Adult Training Program
+            <div class="teaser">Culinary, hospitality &amp; life skills training with mentorship</div>
+          </div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Practical culinary and hospitality training combined with discipleship and life skills &mdash; equipping the next generation for work and for life.</p>
+          <ul>
+            <li>Culinary, hospitality, and customer service training</li>
+            <li>Life skills, financial literacy, and discipleship</li>
+            <li>Mentorship from Christian leaders and licensed counselors</li>
+          </ul>
+        </div>
+      </details>
+
     </div>
   </div>
 </section>
 
 <section class="cta-band">
-  <div class="container">
+  <div class="container reveal">
     <h2>Want to be part of a program?</h2>
     <p>Whether you're seeking counseling, want to volunteer, or want to bring your church alongside us &mdash; let's talk.</p>
     <a href="contact.html" class="btn btn-outline">Get In Touch</a>
@@ -168,7 +212,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>The Healing Table</h4>
+        <img src="assets/logo-light.svg" alt="The Healing Table" class="footer-logo">
         <p>A nonprofit faith-based mental health counseling, hospitality, and training ministry. Healing happens when we sit together &mdash; not alone.</p>
       </div>
       <div>
@@ -190,12 +234,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.
+      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.<div class="footer-meta">Faith &middot; Hospitality &middot; Training</div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

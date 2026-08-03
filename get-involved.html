@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get Involved | The Healing Table</title>
 <meta name="description" content="Give, volunteer, or partner with The Healing Table — a faith-based counseling, hospitality, and youth training ministry.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,9 +15,9 @@
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">
-      The Healing Table
-      <span class="tagline">Counseling · Hospitality · Training</span>
+      <img src="assets/logo.svg" alt="The Healing Table" class="logo-img">
     </a>
+    <span class="nav-tagline">Est. 2026<br>A Ministry of Presence</span>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -24,12 +25,13 @@
       <li><a href="services.html">Programs</a></li>
       <li><a href="get-involved.html" class="current">Get Involved</a></li>
       <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
       <li><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-hero page-hero-photo" style="background-image:url('assets/photos/worship-solo.jpg');">
   <div class="container">
     <h1>Get Involved</h1>
     <p>There's a seat for you at this table &mdash; as a giver, a volunteer, a church partner, or a guest.</p>
@@ -38,21 +40,21 @@
 
 <section id="donate">
   <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Give</span>
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">01</span><span class="label">Give</span></span>
       <h2>Support the Ministry</h2>
       <p>Your gift helps fund counseling scholarships, community meals, and youth training. The Healing Table is a 501(c)(3) nonprofit, and every gift is tax-deductible.</p>
     </div>
-    <div class="grid grid-3">
-      <div class="card">
+    <div class="grid grid-3 reveal-stagger">
+      <div class="card reveal reveal-child">
         <h3>Monthly Giving</h3>
         <p>Become a monthly donor and provide steady, reliable support that lets us plan ahead and grow sustainably.</p>
       </div>
-      <div class="card">
+      <div class="card reveal reveal-child">
         <h3>One-Time Gift</h3>
         <p>Make a one-time donation toward counseling scholarships, community dinners, or our building fund.</p>
       </div>
-      <div class="card">
+      <div class="card reveal reveal-child">
         <h3>In-Kind &amp; Sponsorship</h3>
         <p>Donate goods, kitchen equipment, or sponsor a volunteer, meal, or training cohort.</p>
       </div>
@@ -66,21 +68,21 @@
 
 <section class="section-alt">
   <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Serve</span>
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">02</span><span class="label">Serve</span></span>
       <h2>Volunteer</h2>
       <p>Bring your time and gifts to the table. We need volunteers for community dinners, culinary mentorship, hospitality, and administrative support.</p>
     </div>
-    <div class="grid grid-3">
-      <div class="card">
+    <div class="grid grid-3 reveal-stagger">
+      <div class="card reveal reveal-child">
         <h3>Community Dinners</h3>
         <p>Help cook, serve, and host conversation at our monthly Healing Table dinners and pop-up meals.</p>
       </div>
-      <div class="card">
+      <div class="card reveal reveal-child">
         <h3>Mentorship</h3>
         <p>Licensed counselors, culinary professionals, and Christian leaders are needed to mentor our youth trainees.</p>
       </div>
-      <div class="card">
+      <div class="card reveal reveal-child">
         <h3>Behind the Scenes</h3>
         <p>Support fundraising events, marketing, administration, and church outreach.</p>
       </div>
@@ -90,8 +92,9 @@
 
 <section>
   <div class="container split">
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Partner</span>
+    <div class="photo-frame wide reveal"><img src="assets/photos/welcome.jpg" alt="A warm welcome at Anchor Chapel" loading="lazy"></div>
+    <div class="reveal">
+      <span class="eyebrow-num" style="justify-content:flex-start;"><span class="num">03</span><span class="label">Partner</span></span>
       <h2>Church &amp; Community Partnerships</h2>
       <p>We partner with churches and organizations who want to care for the whole person &mdash; mind, body, and spirit. Partnership can look like hosting a pop-up meal, sponsoring a counseling scholarship, or inviting us to speak.</p>
       <ul class="check">
@@ -100,7 +103,12 @@
         <li>Scholarship and sponsorship partnerships</li>
       </ul>
     </div>
-    <div class="card">
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="card reveal" style="max-width:640px;margin:0 auto;text-align:center;">
       <h3>Attend a Dinner</h3>
       <p>Not ready to give or volunteer? Just come to the table. Join us at a monthly Healing Table dinner &mdash; no strings attached, just a seat and a meal.</p>
       <a href="contact.html" class="btn btn-outline-dark">Ask About Our Next Dinner</a>
@@ -109,7 +117,7 @@
 </section>
 
 <section class="cta-band">
-  <div class="container">
+  <div class="container reveal">
     <h2>Ready to pull up a chair?</h2>
     <p>Reach out and let us know how you'd like to be involved &mdash; we'll take it from there.</p>
     <a href="contact.html" class="btn btn-outline">Contact Us</a>
@@ -120,7 +128,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>The Healing Table</h4>
+        <img src="assets/logo-light.svg" alt="The Healing Table" class="footer-logo">
         <p>A nonprofit faith-based mental health counseling, hospitality, and training ministry. Healing happens when we sit together &mdash; not alone.</p>
       </div>
       <div>
@@ -142,12 +150,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.
+      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.<div class="footer-meta">Faith &middot; Hospitality &middot; Training</div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

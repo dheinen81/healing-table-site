@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Healing Table | Faith-Based Counseling, Hospitality &amp; Training Ministry</title>
 <meta name="description" content="The Healing Table is a nonprofit Christian ministry offering faith-based counseling, pastoral care, community meals, and a donation-only restaurant and youth training program.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,9 +15,9 @@
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">
-      The Healing Table
-      <span class="tagline">Counseling · Hospitality · Training</span>
+      <img src="assets/logo.svg" alt="The Healing Table" class="logo-img">
     </a>
+    <span class="nav-tagline">Est. 2026<br>A Ministry of Presence</span>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
       <li><a href="index.html" class="current">Home</a></li>
@@ -24,6 +25,7 @@
       <li><a href="services.html">Programs</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
       <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
       <li><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
     </ul>
   </nav>
@@ -38,13 +40,51 @@
       <a href="get-involved.html#donate" class="btn btn-primary">Support the Ministry</a>
       <a href="services.html" class="btn btn-outline">Explore Our Programs</a>
     </div>
+
+    <div class="seat-table-wrap">
+      <svg class="seat-table" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" aria-label="An illustrated table with six chairs. Click a chair to take a seat.">
+        <defs>
+          <radialGradient id="tableWood" cx="50%" cy="42%" r="70%">
+            <stop offset="0%" stop-color="#5c7a5f"/>
+            <stop offset="65%" stop-color="#41573f"/>
+            <stop offset="100%" stop-color="#324430"/>
+          </radialGradient>
+          <radialGradient id="candleGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f6d9a8" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#f6d9a8" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="seatFill" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#fffdf8"/>
+            <stop offset="100%" stop-color="#e7ddc7"/>
+          </radialGradient>
+        </defs>
+        <ellipse class="table-top" cx="200" cy="140" rx="145" ry="62" fill="url(#tableWood)" stroke="rgba(250,246,239,0.35)" stroke-width="2"/>
+        <circle cx="200" cy="140" r="34" fill="url(#candleGlow)"/>
+        <circle cx="200" cy="140" r="5" fill="#f6d9a8"/>
+        <circle class="place-ring" cx="370" cy="140" r="27"/>
+        <circle class="place-ring" cx="285" cy="217.9" r="27"/>
+        <circle class="place-ring" cx="115" cy="217.9" r="27"/>
+        <circle class="place-ring" cx="30" cy="140" r="27"/>
+        <circle class="place-ring" cx="115" cy="62.1" r="27"/>
+        <circle class="place-ring" cx="285" cy="62.1" r="27"/>
+        <circle class="seat" data-seat="0" cx="370" cy="140" r="17" fill="url(#seatFill)"/>
+        <circle class="seat" data-seat="1" cx="285" cy="217.9" r="17" fill="url(#seatFill)"/>
+        <circle class="seat" data-seat="2" cx="115" cy="217.9" r="17" fill="url(#seatFill)"/>
+        <circle class="seat" data-seat="3" cx="30" cy="140" r="17" fill="url(#seatFill)"/>
+        <circle class="seat" data-seat="4" cx="115" cy="62.1" r="17" fill="url(#seatFill)"/>
+        <circle class="seat" data-seat="5" cx="285" cy="62.1" r="17" fill="url(#seatFill)"/>
+      </svg>
+      <p class="seat-message" aria-live="polite"></p>
+      <button type="button" class="seat-reset">Choose a different seat</button>
+      <p style="font-size:0.8rem;color:var(--color-cream-dark);opacity:0.7;margin-top:8px;">Click a chair to take your seat at the table.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Our Mission</span>
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">01</span><span class="label">Our Mission</span></span>
       <h2>Healing happens at the table.</h2>
       <p>We believe healing happens both in the heart and at the table. Through Christ-centered counseling, shared meals, and real-life training opportunities, we serve individuals, couples, families, and young people who are looking for restoration, community, and hope.</p>
     </div>
@@ -53,39 +93,41 @@
 
 <section class="section-alt">
   <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">What We Do</span>
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">02</span><span class="label">What We Do</span></span>
       <h2>A ministry of counseling, hospitality, and training</h2>
       <p>Every part of The Healing Table works together &mdash; clinical care, pastoral support, shared meals, and hands-on training &mdash; to restore the whole person.</p>
     </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <span class="icon">&#128172;</span>
-        <h3>Faith-Based Counseling</h3>
-        <p>Individual, couples, family, and group counseling rooted in Christ-centered care, with sliding scale options and scholarships.</p>
+    <div class="grid grid-3 reveal-stagger">
+      <div class="card reveal reveal-child">
+        <h3>Christian Counseling</h3>
+        <p>Licensed clinical counseling for individuals, couples, families, and groups, integrated with a Christian faith perspective, with sliding scale options and scholarships.</p>
       </div>
-      <div class="card">
-        <span class="icon">&#128591;</span>
+      <div class="card reveal reveal-child">
         <h3>Pastoral Care</h3>
-        <p>Pastoral counseling, prayer ministry, spiritual direction, and scriptural healing groups for the spirit as well as the mind.</p>
+        <p>Prayer, spiritual direction, and biblical encouragement with one of our pastors &mdash; spiritual support, not clinical therapy.</p>
       </div>
-      <div class="card">
-        <span class="icon">&#127859;</span>
+      <div class="card reveal reveal-child">
+        <h3>Non-Faith-Based Counseling</h3>
+        <p>The same licensed clinical counseling, offered without a religious lens &mdash; professional mental health support, no faith required.</p>
+      </div>
+      <div class="card reveal reveal-child">
+        <h3>Pastor to Pastor Counseling</h3>
+        <p>Confidential counseling and support for pastors and ministry leaders in Baton Rouge and the surrounding areas.</p>
+      </div>
+      <div class="card reveal reveal-child">
         <h3>Community Meals</h3>
         <p>Monthly Healing Table dinners, pop-up meals in underserved communities, and holiday feasts with devotional messages.</p>
       </div>
-      <div class="card">
-        <span class="icon">&#9749;</span>
-        <h3>Donation-Only Café</h3>
+      <div class="card reveal reveal-child">
+        <h3>Donation-Only Caf&eacute;</h3>
         <p>A &ldquo;pay what you can&rdquo; restaurant and coffee shop staffed in part by youth trainees, reinvesting profits into ministry.</p>
       </div>
-      <div class="card">
-        <span class="icon">&#127857;</span>
+      <div class="card reveal reveal-child">
         <h3>Therapeutic Cooking</h3>
         <p>Trauma-informed culinary workshops, nutrition and soul care classes, and intergenerational cooking and storytelling circles.</p>
       </div>
-      <div class="card">
-        <span class="icon">&#127793;</span>
+      <div class="card reveal reveal-child">
         <h3>Youth &amp; Young Adult Training</h3>
         <p>Culinary, hospitality, and customer service training paired with life skills, financial literacy, and Christian mentorship.</p>
       </div>
@@ -95,35 +137,70 @@
 
 <section class="section-dark">
   <div class="container">
-    <blockquote class="quote-block">
-      &ldquo;To build a community where people are restored in mind, renewed in spirit, and reminded of their God-given worth through the simple act of gathering at the table.&rdquo;
-      <cite>Our Vision</cite>
-    </blockquote>
+    <div class="quote-carousel reveal">
+      <div class="quote-slide active">
+        <blockquote>&ldquo;To build a community where people are restored in mind, renewed in spirit, and reminded of their God-given worth through the simple act of gathering at the table.&rdquo;
+        <cite>Our Vision</cite></blockquote>
+      </div>
+      <div class="quote-slide">
+        <blockquote>&ldquo;To bring healing to hurting hearts through faith-based counseling, hospitality, and the ministry of presence around the table.&rdquo;
+        <cite>Our Mission</cite></blockquote>
+      </div>
+      <div class="quote-slide">
+        <blockquote>&ldquo;Forgive as the Lord forgave you.&rdquo;
+        <cite>Colossians 3:13</cite></blockquote>
+      </div>
+      <div class="quote-slide">
+        <blockquote>&ldquo;Practice hospitality to one another without grumbling.&rdquo;
+        <cite>1 Peter 4:9</cite></blockquote>
+      </div>
+      <div class="quote-slide">
+        <blockquote>&ldquo;They devoted themselves to the breaking of bread and to prayer.&rdquo;
+        <cite>Acts 2:42</cite></blockquote>
+      </div>
+      <div class="quote-dots"></div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="container split">
-    <div>
-      <span class="eyebrow" style="color:var(--color-terracotta);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;font-weight:700;">Our Story</span>
+    <div class="reveal">
+      <span class="eyebrow-num" style="justify-content:flex-start;"><span class="num">03</span><span class="label">Our Story</span></span>
       <h2>Rooted in the belief that healing happens both in the heart and at the table</h2>
       <p>The Healing Table began with a simple conviction: people heal in the presence of others, not in isolation. We blend licensed mental health care, pastoral support, and therapeutic community meals into one ministry &mdash; and we're building a donation-only restaurant and coffee shop that trains youth and young adults in culinary and life skills along the way.</p>
       <a href="about.html" class="btn btn-outline-dark">Read Our Full Story</a>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Who We Serve</h3>
       <ul class="check">
         <li>Individuals and families facing emotional or spiritual struggles</li>
-        <li>Those with limited access to affordable, faith-based counseling</li>
+        <li>Those with limited access to affordable counseling, whether or not they share our faith</li>
         <li>Churches seeking to partner in soul care and community outreach</li>
+        <li>Pastors and ministry leaders in Baton Rouge and surrounding areas who need confidential support of their own</li>
         <li>Youth and young adults in need of job training and mentorship</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
+<section class="section-alt">
   <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">04</span><span class="label">A Glimpse at the Table</span></span>
+      <h2>Moments of hospitality</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="photo-frame tall"><img src="assets/photos/prayer-together.jpg" alt="Praying together in community" loading="lazy"></div>
+      <div class="photo-frame square"><img src="assets/photos/outreach-hope.jpg" alt="Volunteers at a community outreach event" loading="lazy"></div>
+      <div class="photo-frame square"><img src="assets/photos/mentorship.jpg" alt="A mentor with a young person from the community" loading="lazy"></div>
+      <div class="photo-frame wide"><img src="assets/photos/embrace.jpg" alt="A warm embrace in community" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container reveal">
     <h2>There's a seat for you at the table.</h2>
     <p>Whether you're seeking counseling, a meal, a partnership, or a place to serve &mdash; we'd love to have you.</p>
     <a href="get-involved.html" class="btn btn-outline">Get Involved</a>
@@ -134,7 +211,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>The Healing Table</h4>
+        <img src="assets/logo-light.svg" alt="The Healing Table" class="footer-logo">
         <p>A nonprofit faith-based mental health counseling, hospitality, and training ministry. Healing happens when we sit together &mdash; not alone.</p>
       </div>
       <div>
@@ -156,12 +233,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.
+      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.<div class="footer-meta">Faith &middot; Hospitality &middot; Training</div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

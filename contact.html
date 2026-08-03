@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | The Healing Table</title>
 <meta name="description" content="Get in touch with The Healing Table to ask about counseling, community meals, volunteering, or church partnerships.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,9 +15,9 @@
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">
-      The Healing Table
-      <span class="tagline">Counseling · Hospitality · Training</span>
+      <img src="assets/logo.svg" alt="The Healing Table" class="logo-img">
     </a>
+    <span class="nav-tagline">Est. 2026<br>A Ministry of Presence</span>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -29,7 +30,7 @@
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-hero page-hero-photo" style="background-image:url('assets/photos/fellowship.jpg');">
   <div class="container">
     <h1>Contact Us</h1>
     <p>Have a question about counseling, volunteering, or partnering with us? We'd love to hear from you.</p>
@@ -38,7 +39,7 @@
 
 <section>
   <div class="container split">
-    <div>
+    <div class="reveal">
       <h2>Send a Message</h2>
       <form action="#" method="post">
         <div class="form-group">
@@ -52,7 +53,10 @@
         <div class="form-group">
           <label for="reason">I'm reaching out about&hellip;</label>
           <select id="reason" name="reason">
-            <option>Counseling Services</option>
+            <option>Christian Counseling</option>
+            <option>Non-Faith-Based Counseling</option>
+            <option>Pastoral Care</option>
+            <option>Pastor to Pastor Counseling</option>
             <option>Volunteering</option>
             <option>Church or Community Partnership</option>
             <option>Donating / Giving</option>
@@ -68,31 +72,27 @@
       <p style="margin-top:14px; color:var(--color-text-light); font-size:0.88rem;">This form is a placeholder for now &mdash; connect it to your email or form service (or a WordPress plugin like WPForms) once the site is live.</p>
     </div>
 
-    <div>
+    <div class="reveal">
       <h2>Reach Us Directly</h2>
       <div class="contact-info-item">
-        <span class="icon">&#9993;</span>
         <div>
           <strong>Email</strong><br>
           <a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a>
         </div>
       </div>
       <div class="contact-info-item">
-        <span class="icon">&#128222;</span>
         <div>
           <strong>Phone</strong><br>
           <span>(Add your ministry phone number)</span>
         </div>
       </div>
       <div class="contact-info-item">
-        <span class="icon">&#128205;</span>
         <div>
           <strong>Location</strong><br>
           <span>(Add your city, or "Serving [Region] by appointment")</span>
         </div>
       </div>
       <div class="contact-info-item">
-        <span class="icon">&#128197;</span>
         <div>
           <strong>Community Dinners</strong><br>
           <span>Ask us about our next monthly Healing Table dinner.</span>
@@ -102,8 +102,121 @@
   </div>
 </section>
 
-<section class="cta-band">
+<section class="section-alt" id="faq">
   <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow-num"><span class="num">01</span><span class="label">Questions</span></span>
+      <h2>Frequently Asked</h2>
+      <p>Answers to what people usually ask before reaching out.</p>
+    </div>
+    <div class="explorer">
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">Do I have to be a Christian to receive counseling or attend a dinner?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>No. Our doors are open to anyone seeking support, regardless of faith background. Ask for Non-Faith-Based Counseling if you'd rather your sessions not include scripture or prayer &mdash; it's the same licensed clinical care, just without the religious lens. Everyone has a seat at the table.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">What's the difference between Christian Counseling, Non-Faith-Based Counseling, and Pastoral Care?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Christian Counseling and Non-Faith-Based Counseling are both licensed clinical care from the same counselors &mdash; the only difference is whether faith is woven into your sessions. Pastoral Care is different: it's spiritual support from one of our pastors (prayer, spiritual direction, biblical encouragement), not clinical treatment, and it's not a substitute for licensed counseling. Many people use both together.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">How much does counseling cost?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>We offer sliding-scale payment options and scholarships, so cost is never a barrier to getting care. Ask us about what's available when you reach out.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">Is my counseling confidential?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Yes. Our licensed counselors follow standard confidentiality and clinical supervision protocols, and we carry liability insurance to support that care.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">I'm a pastor &mdash; how does Pastor to Pastor Counseling work?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>This service offers confidential, one-on-one counseling for pastors and ministry leaders in Baton Rouge and the surrounding areas &mdash; a space to be cared for yourself, outside your own congregation. Reach out through the form above and mention Pastor to Pastor Counseling in your message.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">How do I join a community dinner?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Reach out through the form above or by email, and we'll let you know the date, time, and location of our next Healing Table dinner. No strings attached &mdash; just come as you are.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">Is the donation-only caf&eacute; open yet?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Not yet &mdash; the caf&eacute; and teaching kitchen open as part of our Phase 2 expansion. Reach out to be added to our list and hear first when it opens.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">Can my church partner with The Healing Table?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Absolutely. We partner with churches for speaking engagements, co-hosted community meals, and scholarship sponsorships. Visit our Get Involved page or contact us to start the conversation.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">Are donations tax-deductible?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Yes. The Healing Table is a 501(c)(3) nonprofit organization, and every gift is tax-deductible.</p>
+        </div>
+      </details>
+
+      <details class="explorer-item reveal">
+        <summary>
+          <div class="summary-text">How can a young person join the training program?</div>
+          <span class="chevron">+</span>
+        </summary>
+        <div class="explorer-body">
+          <p>Our Youth &amp; Young Adult Training Program launches alongside our Phase 2 facility expansion. Contact us to be added to the interest list so you're first to know when applications open.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container reveal">
     <h2>Pull up a chair. There is room for you.</h2>
     <p>Whatever brings you here, we're glad you did.</p>
     <a href="index.html" class="btn btn-outline">Back to Home</a>
@@ -114,7 +227,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>The Healing Table</h4>
+        <img src="assets/logo-light.svg" alt="The Healing Table" class="footer-logo">
         <p>A nonprofit faith-based mental health counseling, hospitality, and training ministry. Healing happens when we sit together &mdash; not alone.</p>
       </div>
       <div>
@@ -124,6 +237,7 @@
           <li><a href="services.html">Our Programs</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
         </ul>
       </div>
       <div>
@@ -136,12 +250,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.
+      &copy; <span id="year"></span> The Healing Table. A 501(c)(3) nonprofit organization.<div class="footer-meta">Faith &middot; Hospitality &middot; Training</div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
