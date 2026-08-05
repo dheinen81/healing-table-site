@@ -25,7 +25,6 @@
       <li><a href="services.html">Programs</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
       <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#faq">FAQ</a></li>
       <li><a href="get-involved.html#donate" class="btn btn-primary">Donate</a></li>
     </ul>
   </nav>
@@ -59,8 +58,8 @@
           </radialGradient>
         </defs>
         <ellipse class="table-top" cx="200" cy="140" rx="145" ry="62" fill="url(#tableWood)" stroke="rgba(250,246,239,0.35)" stroke-width="2"/>
-        <circle cx="200" cy="140" r="34" fill="url(#candleGlow)"/>
-        <circle cx="200" cy="140" r="5" fill="#f6d9a8"/>
+        <circle class="candle-glow" cx="200" cy="140" r="34" fill="url(#candleGlow)"/>
+        <circle class="candle-flame" cx="200" cy="140" r="5" fill="#f6d9a8"/>
         <circle class="place-ring" cx="370" cy="140" r="27"/>
         <circle class="place-ring" cx="285" cy="217.9" r="27"/>
         <circle class="place-ring" cx="115" cy="217.9" r="27"/>
@@ -120,8 +119,8 @@
         <p>Monthly Healing Table dinners, pop-up meals in underserved communities, and holiday feasts with devotional messages.</p>
       </div>
       <div class="card reveal reveal-child">
-        <h3>Donation-Only Caf&eacute;</h3>
-        <p>A &ldquo;pay what you can&rdquo; restaurant and coffee shop staffed in part by youth trainees, reinvesting profits into ministry.</p>
+        <h3>Donation-Only Caf&eacute; &amp; Pantry</h3>
+        <p>A &ldquo;pay what you can&rdquo; restaurant and coffee shop paired with a community pantry, staffed in part by youth trainees.</p>
       </div>
       <div class="card reveal reveal-child">
         <h3>Therapeutic Cooking</h3>
@@ -204,6 +203,33 @@
   </div>
 </section>
 
+<section class="section-alt" id="prayer">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Prayer</span>
+      <h2>Submit a Prayer Request</h2>
+      <p style="font-style:italic;">&ldquo;Is anyone among you suffering? Let them pray.&rdquo; &mdash; James 5:13</p>
+    </div>
+    <div style="max-width:560px;margin:0 auto;" class="reveal">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="home-prayer-name">Name (optional)</label>
+          <input type="text" id="home-prayer-name" name="prayer-name">
+        </div>
+        <div class="form-group">
+          <label for="home-prayer-request">Your Prayer Request</label>
+          <textarea id="home-prayer-request" name="prayer-request" required></textarea>
+        </div>
+        <div class="form-group" style="display:flex;align-items:center;gap:10px;">
+          <input type="checkbox" id="home-prayer-confidential" name="prayer-confidential" style="width:auto;">
+          <label for="home-prayer-confidential" style="margin:0;font-weight:400;">Keep this request confidential (shared only with our prayer team)</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <section class="cta-band">
   <div class="container reveal">
     <h2>There's a seat for you at the table.</h2>
@@ -232,6 +258,8 @@
         <h4>Connect</h4>
         <ul>
           <li><a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a></li>
+          <li><a href="contact.html#prayer">Prayer Request</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
           <li><a href="get-involved.html#donate">Give Online</a></li>
           <li><a href="contact.html">Partner With Us</a></li>
         </ul>

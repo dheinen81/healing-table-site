@@ -73,31 +73,51 @@
       <p style="margin-top:14px; color:var(--color-text-light); font-size:0.88rem;">This form is a placeholder for now &mdash; connect it to your email or form service (or a WordPress plugin like WPForms) once the site is live.</p>
     </div>
 
-    <div class="reveal">
-      <h2>Reach Us Directly</h2>
-      <div class="contact-info-item">
-        <div>
-          <strong>Email</strong><br>
-          <a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a>
+    <div class="reveal" id="prayer">
+      <h2>Submit a Prayer Request</h2>
+      <p style="font-style:italic;color:var(--color-text-light);font-size:0.92rem;margin-top:-6px;">&ldquo;Is anyone among you suffering? Let them pray.&rdquo; &mdash; James 5:13</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="prayer-name">Name (optional)</label>
+          <input type="text" id="prayer-name" name="prayer-name">
         </div>
+        <div class="form-group">
+          <label for="prayer-email">Email (optional, if you'd like a follow-up)</label>
+          <input type="email" id="prayer-email" name="prayer-email">
+        </div>
+        <div class="form-group">
+          <label for="prayer-request">Your Prayer Request</label>
+          <textarea id="prayer-request" name="prayer-request" required></textarea>
+        </div>
+        <div class="form-group" style="display:flex;align-items:center;gap:10px;">
+          <input type="checkbox" id="prayer-confidential" name="prayer-confidential" style="width:auto;">
+          <label for="prayer-confidential" style="margin:0;font-weight:400;">Keep this request confidential (shared only with our prayer team)</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+      </form>
+      <p style="margin-top:14px; color:var(--color-text-light); font-size:0.88rem;">This form is a placeholder for now &mdash; connect it to your email or form service once the site is live.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="grid grid-4 reveal-stagger" style="text-align:center;">
+      <div class="reveal reveal-child">
+        <strong>Email</strong><br>
+        <a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a>
       </div>
-      <div class="contact-info-item">
-        <div>
-          <strong>Phone</strong><br>
-          <span>(Add your ministry phone number)</span>
-        </div>
+      <div class="reveal reveal-child">
+        <strong>Phone</strong><br>
+        <span>(Add your ministry phone number)</span>
       </div>
-      <div class="contact-info-item">
-        <div>
-          <strong>Location</strong><br>
-          <span>(Add your city, or "Serving [Region] by appointment")</span>
-        </div>
+      <div class="reveal reveal-child">
+        <strong>Location</strong><br>
+        <span>(Add your city, or "Serving [Region] by appointment")</span>
       </div>
-      <div class="contact-info-item">
-        <div>
-          <strong>Community Dinners</strong><br>
-          <span>Ask us about our next monthly Healing Table dinner.</span>
-        </div>
+      <div class="reveal reveal-child">
+        <strong>Community Dinners</strong><br>
+        <span>Ask us about our next monthly dinner.</span>
       </div>
     </div>
   </div>
@@ -174,11 +194,11 @@
 
       <details class="explorer-item reveal">
         <summary>
-          <div class="summary-text">Is the donation-only caf&eacute; open yet?</div>
+          <div class="summary-text">Is the caf&eacute; or community pantry open yet?</div>
           <span class="chevron">+</span>
         </summary>
         <div class="explorer-body">
-          <p>Not yet &mdash; the caf&eacute; and teaching kitchen open as part of our Phase 2 expansion. Reach out to be added to our list and hear first when it opens.</p>
+          <p>Not yet &mdash; the caf&eacute;, teaching kitchen, and community pantry open together as part of our Phase 2 expansion. The pantry will offer groceries and household essentials to anyone in need, no questions asked. Reach out to be added to our list and hear first when it opens.</p>
         </div>
       </details>
 
@@ -248,13 +268,14 @@
           <li><a href="services.html">Our Programs</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#faq">FAQ</a></li>
         </ul>
       </div>
       <div>
         <h4>Connect</h4>
         <ul>
           <li><a href="mailto:hello@thehealingtable.org">hello@thehealingtable.org</a></li>
+          <li><a href="contact.html#prayer">Prayer Request</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
           <li><a href="get-involved.html#donate">Give Online</a></li>
           <li><a href="contact.html">Partner With Us</a></li>
         </ul>

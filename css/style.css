@@ -31,6 +31,14 @@ body {
   background: var(--color-cream);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  animation: page-fade-in 0.6s ease both;
+}
+@keyframes page-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
 }
 
 h1, h2, h3, h4 {
@@ -209,6 +217,7 @@ section { padding: 72px 0; }
   display: grid;
   gap: 28px;
 }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 
@@ -418,6 +427,28 @@ textarea { resize: vertical; min-height: 140px; }
 }
 .table-top {
   transition: filter 0.3s ease;
+}
+.candle-glow {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: candle-flicker 2.6s ease-in-out infinite;
+}
+.candle-flame {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: candle-flicker 2.1s ease-in-out infinite reverse;
+}
+@keyframes candle-flicker {
+  0%   { opacity: 1;    transform: scale(1); }
+  20%  { opacity: 0.85; transform: scale(0.95); }
+  35%  { opacity: 1;    transform: scale(1.05); }
+  50%  { opacity: 0.9;  transform: scale(0.97); }
+  65%  { opacity: 1;    transform: scale(1.03); }
+  80%  { opacity: 0.88; transform: scale(0.98); }
+  100% { opacity: 1;    transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .candle-glow, .candle-flame { animation: none; }
 }
 .place-ring {
   fill: none;
@@ -680,6 +711,17 @@ textarea { resize: vertical; min-height: 140px; }
 }
 .page-hero-photo .container { position: relative; z-index: 1; }
 
+/* Parallax: fixed attachment on larger screens with hover/pointer support only,
+   since iOS Safari doesn't render fixed backgrounds and mobile scroll perf suffers. */
+@media (min-width: 960px) and (hover: hover) and (pointer: fine) {
+  .page-hero-photo {
+    background-attachment: fixed;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-hero-photo { background-attachment: scroll; }
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -696,8 +738,43 @@ textarea { resize: vertical; min-height: 140px; }
   font-style: italic;
 }
 
+/* ---------- Impact Counters ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-card {
+  text-align: center;
+  padding: 32px 16px;
+}
+.stat-number {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+.stats-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-top: 8px;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; gap: 32px; }
@@ -705,6 +782,7 @@ textarea { resize: vertical; min-height: 140px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid .photo-frame:nth-child(1) { grid-column: span 2; grid-row: span 1; }
   .gallery-grid .photo-frame:nth-child(4) { grid-column: span 1; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.6rem; }
 }

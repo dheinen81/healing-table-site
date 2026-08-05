@@ -1,5 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  /* ---------- Animated impact counters ---------- */
+  var counters = document.querySelectorAll(".stat-number[data-count-to]");
+  if (counters.length) {
+    var animateCounter = function (el) {
+      var target = parseFloat(el.getAttribute("data-count-to"));
+      var suffix = el.getAttribute("data-suffix") || "";
+      var duration = 1400;
+      var start = null;
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        var progress = Math.min((timestamp - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(target * eased);
+        el.textContent = current.toLocaleString() + suffix;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target.toLocaleString() + suffix;
+        }
+      }
+      requestAnimationFrame(step);
+    };
+
+    if ("IntersectionObserver" in window) {
+      var counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(function (el) { counterObserver.observe(el); });
+    } else {
+      counters.forEach(function (el) {
+        el.textContent = el.getAttribute("data-count-to") + (el.getAttribute("data-suffix") || "");
+      });
+    }
+  }
+
   /* ---------- Mobile nav toggle ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var links = document.querySelector(".nav-links");
